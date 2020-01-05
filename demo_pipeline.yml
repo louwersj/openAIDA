@@ -24,6 +24,7 @@ steps:
 - script: |
     $x1 = $MYENVVAR1" xxxxxxxx"
     echo $x1
+    echo "a"
   displayName: 'Run a one-line script'
   env:
     MYENVVAR1: $(private_variable)
