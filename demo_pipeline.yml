@@ -22,7 +22,7 @@ steps:
     MYENVVAR1: $(private_variable)
 
 - script: |
-    $x1 = $MYENVVAR1" xxxxxxxx"
+    $x1=$MYENVVAR1" xxxxxxxx"
     echo $x1
     echo "a"
   displayName: 'Run a one-line script'
