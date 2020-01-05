@@ -22,6 +22,14 @@ steps:
     MYENVVAR1: $(private_variable)
 
 - script: |
+    $x1 = $MYENVVAR1" xxxxxxxx"
+    echo $x1
+  displayName: 'Run a one-line script'
+  env:
+    MYENVVAR1: $(private_variable)
+
+
+- script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
