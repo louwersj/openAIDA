@@ -13,6 +13,9 @@ steps:
 - script: echo "public $(public_variable)"
   displayName: 'Run a one-line script'
 
+- script: echo "private $(private_variable)"
+  displayName: 'Run a one-line script'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
