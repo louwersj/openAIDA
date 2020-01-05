@@ -10,7 +10,8 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 # Set variables once
-releaseType: "test"
+variables:
+  releaseType: "test"
 
 jobs:
 - job: A
