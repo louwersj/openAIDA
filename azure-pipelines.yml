@@ -14,7 +14,7 @@ variables:
   releaseType: "test"
 
 jobs:
-- job: A
+- job: "Validate"
   steps:
   - script: echo Hello, world!
     displayName: 'Run a one-line script'
@@ -24,7 +24,7 @@ jobs:
     
   - script : echo $(releaseType)
    
-- job: B
+- job: "Build"
   steps:
   - script: |
      echo Add other tasks to build, test, and deploy your project.
