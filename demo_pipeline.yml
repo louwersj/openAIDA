@@ -16,7 +16,14 @@ steps:
 - script: echo "private $(private_variable)"
   displayName: 'Run a one-line script'
 
+- script: echo $MY_ENV_VAR1
+  displayName: 'Run a one-line script'
+
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+
+env:
+    MY_ENV_VAR1: $(private_variable)
