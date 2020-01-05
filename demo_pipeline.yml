@@ -16,7 +16,7 @@ steps:
 - script: echo "private $(private_variable)"
   displayName: 'Run a one-line script'
 
-- script: echo $MY_ENV_VAR1
+- script: echo $env:MY_ENV_VAR1
   displayName: 'Run a one-line script'
   env:
     MY_ENV_VAR1: $(private_variable)
