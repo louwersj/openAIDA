@@ -44,3 +44,4 @@ jobs:
         echo 'Hello world'
       workingDirectory: '/tmp'
       failOnStderr: true
+        displayName: 'c-2'
